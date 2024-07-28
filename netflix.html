@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+      *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(78, 75, 75);
+}
+main{
+    background-image: url("assets/images/background.jpg");
+    height: 80vh;
+}
+main .bg{
+    height: 80vh;
+    width:100vw;
+    filter: opacity(-0.6);
+    background-size: max(1200px, 100vw);
+    background-color: rgba(0, 0, 0, 0.229);
+}
+main img{
+margin:22px 120px;
+padding: 0px 40px;
+width:160px;
+
+}
+.op{
+margin:24px 120px;
+padding: 0px 40px;
+float: right;
+display: flex;
+gap: 20px;
+}
+.opp button{
+    margin:25px 0px;
+    padding:0px 0px;
+    float: right;
+    border: 2px solid  rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    filter: invert(1);
+    display: flex;
+    gap:0px;
+}
+.opr select{
+margin:23px -162px;
+padding: 0px 40px;
+float: right;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+padding: 6px 50px;
+border-radius: 5px;
+font-size: medium;
+text-align: center;
+}
+button{
+background-color: rgb(252, 0, 0);
+color: rgb(255, 255, 255); 
+padding: 6px 10px;
+border-radius: 5px;
+font-size: medium;
+font-weight: bolder;
+}
+.mid{
+padding:200px;
+text-align: center;
+color: rgb(255, 255, 255);
+position: relative;
+gap: 24px;
+}
+.bar{
+margin: 0px;
+padding: 0px;
+height:144px;
+background-color: rgba(0, 0, 0, 0);
+}
+input{
+height: 40px;
+width:320px;
+background-color: rgba(0, 0, 0, 0.188);
+font-size: medium;
+font-weight: 600;
+color: rgb(255, 255, 255);
+position: relative;
+gap: 80px;
+}
+.box{
+height: 60vh;
+width:100vw;
+background-size: max(1200px, 100vw);
+background-color:black;
+margin:10px 0px;
+}
+.tv{
+padding: 54px 64px;
+float: right;
+}
+.tv img{
+height: 45vh;
+width:29vw;
+position: relative;
+z-index: 10;
+}
+.tv video{
+position:absolute;
+right: 110px;
+top: 729px;
+height:176px;
+}
+.write{
+color: rgb(255, 255, 255);
+position: relative;
+padding: 34px 144px;
+top:100px;
+}
+.write  h1{
+font-size: 4vw;
+margin: 22px 0px;
+}
+.write p{
+font-size: 2vw;
+font-weight: 100;
+}
+
+.box1{
+height: 60vh;
+width:100vw;
+background-size: max(1200px, 100vw);
+background-color:black;
+margin:10px 0px;
+}
+.mobile{
+position: relative;
+padding: 44px 24px;
+float: left;
+}
+.wr{
+color: rgb(255, 255, 255);
+position: absolute;
+padding: 120px 44px;
+float: right; 
+}
+.wr  h1{
+font-size: 4vw;
+margin: 22px 0px;
+top:0;
+float: right;
+}
+.wr p{
+font-size: 2vw;
+font-weight: 100;
+float: right;
+}
+.box2{
+height: 60vh;
+width:100vw;
+background-size: max(1200px, 100vw);
+background-color:black;
+margin:10px 0px;
+}
+.tv1{
+padding: 54px 64px;
+float: right;
+}
+.tv1 img{
+height: 45vh;
+width:30vw;
+position: relative; 
+z-index: 10;
+}
+.tv1 video{
+position: absolute;
+right: 140px;
+top: 1610px;
+height:150px;
+}
+.wrt{
+color: rgb(255, 255, 255);
+position: relative;
+padding: 34px 144px;
+top:100px;
+}
+.wrt  h1{
+font-size: 4vw;
+margin: 22px 0px;
+}
+.wrt p{
+font-size: 2vw;
+font-weight: 100;
+}
+.box3{
+height: 60vh;
+width:100vw;
+background-size: max(1200px, 100vw);
+background-color:black;
+margin:10px 0px;
+}
+.child{
+position: relative;
+padding: 44px 44px;
+float: left;
+}
+.do{
+height:45vh;
+width:55vw;
+display:flex;
+justify-content:center;
+gap:20px;
+padding:60px 44px;
+flex-direction: column;
+}
+.wrr{
+height:8vh;
+width:34vw;
+padding:0px 170px;
+}
+.wrr p{
+color: rgb(255, 255, 255);
+text-align: center;
+font-size: 50px;
+font-weight: 800;
+}
+.wrr1{
+height:15vh;
+width:34vw;
+display:flex;
+padding:0px 170px;
+}
+.wrr1 p{
+color: rgb(255, 255, 255);
+text-align: center;
+font-size: 24px;
+font-weight: 300;
+}
+.faq{
+height: 80vh;
+width:100vw;
+background-size: max(1200px, 100vw);
+background-color:black;
+margin:10px 0px;
+}
+/* .faq :hover{
+background-color:black;
+} */
+.F{
+margin:12px auto;
+padding:2px;
+height:8vh;
+width:84vw;
+display:flex;
+justify-content: space-between;
+color: rgb(255, 255, 255);
+font-size: x-large;
+background-color: rgb(108, 108, 108);
+cursor: pointer;
+transition: all 1s cubic-bezier(0.23, 0.85, 0.27, 0.72);
+}
+.F svg {
+  filter: invert(1);
+}
+.head h1{
+padding: 12px 20px;
+text-align: center;
+font-size: 50px;
+font-weight: 900;
+}
+.foot{
+height: 60vh;
+width:100vw;
+background-size: max(1200px, 100vw);
+background-color:black;
+margin:20px 0px;
+padding:20px 0px;
+}
+.ft a{
+margin:auto;
+color:rgb(255, 255, 255);
+}
+.ft{
+margin:auto;
+}
+.fit{
+margin:40px 20px;
+display: grid;
+justify-content: center;
+grid-template-columns: 300px 400px 400px 300px;
+grid-template-rows: 50px 50px 50px 50px;
+}
+.h{
+color: rgb(255, 255, 255);
+padding:29px 84px;
+/* text-align: center; */
+}
+.op1{
+margin:24px 120px;
+padding: 0px 40px;
+display: flex;
+}
+.hh{
+color: rgb(255, 255, 255);
+padding:0px 154px;
+}
+    </style>
+</head>
+<body>
+    <main>
+        <div class="bg">
+    <nav>
+        <div class="op">
+          <button>Sign in </button>
+        </div>
+          <div class="opp">
+          <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+            <path d="M5 5.96552H8.15M12 5.96552H10.25M8.15 5.96552H10.25M8.15 5.96552V5M10.25 5.96552C9.88076 7.28593 9.10754 8.53411 8.225 9.63103M5.975 12C6.68843 11.344 7.4942 10.5394 8.225 9.63103M8.225 9.63103C7.775 9.10345 7.145 8.24984 6.965 7.86364M8.225 9.63103L9.575 11.0345" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M7.02231 16.9777C7.07674 18.6978 7.26397 19.7529 7.90796 20.5376C8.07418 20.7401 8.25989 20.9258 8.46243 21.092C9.56878 22 11.2125 22 14.5 22C17.7875 22 19.4312 22 20.5376 21.092C20.7401 20.9258 20.9258 20.7401 21.092 20.5376C22 19.4312 22 17.7875 22 14.5C22 11.2125 22 9.56878 21.092 8.46243C20.9258 8.25989 20.7401 8.07418 20.5376 7.90796C19.7563 7.26676 18.707 7.07837 17 7.02303M7.02231 16.9777C5.30217 16.9233 4.24713 16.736 3.46243 16.092C3.25989 15.9258 3.07418 15.7401 2.90796 15.5376C2 14.4312 2 12.7875 2 9.5C2 6.21252 2 4.56878 2.90796 3.46243C3.07418 3.25989 3.25989 3.07418 3.46243 2.90796C4.56878 2 6.21252 2 9.5 2C12.7875 2 14.4312 2 15.5376 2.90796C15.7401 3.07418 15.9258 3.25989 16.092 3.46243C16.736 4.24713 16.9233 5.30217 16.9777 7.02231C16.9777 7.02231 16.9777 7.02231 17 7.02303M7.02231 16.9777L17 7.02303" stroke="currentColor" stroke-width="1.5" />
+            <path d="M13 19L13.8333 17M18 19L17.1667 17M13.8333 17L15.5 13L17.1667 17M13.8333 17H17.1667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg></button>
+        <div class="opr">
+        <select>
+          <option form="english"> English </option>
+          <option form="Hindi">Hindi</option>
+      </select>
+      </div>
+        </div>
+        </nav>
+        <header>
+       <span><img src="assets/svg/source.svg"></span>
+        </header>
+        <div class="mid">
+            <h1 style="font-size:4vw"><b>Unlimited movies, TV shows and more</b></h1>
+            <br>
+            <h3 style="font-size:1.2rem"><p>Watch anywhere. Cancel anytime.</p>
+            <br>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p></h3>
+            <br>
+            <div class="bar">
+                <input type="email" placeholder="Email Address" id="email" name="email" autofocus>
+                <button style="padding: 12px 28px;">Get Started &gt;</button>
+            </div>
+        </div>
+        </div>
+    </main>
+    <div class="box">
+      <div class="tv">
+        <img src="assets/images/tv.png"> 
+        <video src="assets/videos/video-tv.m4v" autoplay="" playsinline="" muted="" loop=""></video>
+      </div>
+      <div class="write">
+            <h1>Enjoy on your TV</h1>
+      <p>Watch on smart TVs, PlayStation, Xbox, Chromecast,</p>
+      <p>Apple TV, Blu-ray players and more.</p>
+      </div>
+    </div>
+    <div class="box1">
+        <div class="mobile">
+          <img src="assets/images/mobile.jpg" height="340">
+        </div>
+        <div class="wr">
+              <h1>Download your shows to watch offline</h1>
+        <p>Save your favourites easily and always have something to watch.</p>
+        </div>
+      </div>
+      <div class="box2">
+        <div class="tv1">
+          <img src="assets/images/device.png"> 
+          <video src="assets/videos/video-devices.m4v" autoplay="" playsinline="" muted="" loop=""></video>
+        </div>
+        <div class="write">
+              <h1>Watch Everywhere</h1>
+        <p>Stream unlimited movies and TV shows on your</p>
+        <p>phone, tablet, laptop, and TV.</p>
+        </div>
+      </div>
+
+      <div class="box3">
+        <div class="child">
+          <img src="assets/images/children.png" height="340">
+        </div>
+        <div class="do">
+            <div class="wrr">
+                <p>Create profiles for kids</p>
+                </div>
+                <div class="wrr1">
+                    <p> Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
+                </div>
+        </div>
+      </div>
+
+      <div class="faq">
+         <div class="head">
+            <h1 style="color: rgb(255, 255, 255);">Frequently Asked Questions</h1>
+         <div class="F">What is Netflix ?
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+               <path d="M12 4V20M20 12H4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+           </svg>
+         </div>
+         <div class="F">How much does Netflix cost ?
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+               <path d="M12 4V20M20 12H4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+           </svg>
+         </div>
+         <div class="F">Where can I watch ?
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+               <path d="M12 4V20M20 12H4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+           </svg>
+         </div>
+         <div class="F"> How do I cancel ?
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+               <path d="M12 4V20M20 12H4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+           </svg>
+         </div>
+         <div class="F">What can I watch on Netflix ?
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+               <path d="M12 4V20M20 12H4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+           </svg>
+         </div>
+         <div class="F">Is Netflix good for kids ? 
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+               <path d="M12 4V20M20 12H4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+           </svg>
+         </div>
+      </div>
+      <br>
+      <br>
+</body>
+<footer>
+   <div class="foot">
+      <div class="h">
+         <p>Questions? Call 000-800-919-1694</p>
+      </div>
+      <div class="fit">
+     <div class="ft"><a href="/">FAQ</a></div>
+     <div class="ft"><a href="/">Investor Relations</a></div>
+     <div class="ft"><a href="/">Privacy</a></div>
+     <div class="ft"><a href="/">Speed Test</a></div>
+     <div class="ft"><a href="/">Help Center</a></div>
+     <div class="ft"><a href="/">Jobs</a></div>
+     <div class="ft"><a href="/">Cookie Preference</a></div>
+     <div class="ft"><a href="/">Legal Notices</a></div>
+     <div class="ft"><a href="/">Account</a></div>
+     <div class="ft"><a href="/">Ways To Watch</a></div>
+     <div class="ft"><a href="/">Corporate Information</a></div>
+     <div class="ft"><a href="/">Only on Netflix</a></div>
+     <div class="ft"><a href="/">Media Center</a></div>
+     <div class="ft"><a href="/">Terms of Use</a></div>
+     <div class="ft"><a href="/">Contact Us</a></div>
+     </div>
+     <div class="op1">
+      <select>
+          <option form="english">English</option>
+          <option form="Hindi">Hindi</option>
+      </select>
+      </div>
+      <div class="hh">
+         <p>Netflix India</p>
+      </div>
+   </div>
+</footer>
+</html>
